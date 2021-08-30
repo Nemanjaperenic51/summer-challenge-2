@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $text;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition:color .4s ease;
+}
+
+.py {
+    padding: 50px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.underline {
+    display: flex;
+    width: 150px;
+    margin: 20px auto;
+    div {
+        background: $primary;
+        height: 6px;
+        border-radius: 4px;
+         margin-left: 1px;
+    }
+    .item1 {
+        flex: 0 0 58%;
+    }
+    .item2 {
+        flex: 0 0 28%;
+    }
+    .item3 {
+        flex: 0 0 9%;
+    }
+}
+
+hr {
+    height: 2px;
+    border: 0;
+    background: $lightGray;
+    margin: 50px auto;
+}
+
+.featuredImg {
+    position: relative;
+    margin-top: 40px;
+    .date {
+        position: absolute;
+        top: 0;
+        right: 30px;
+        background: $lightGray;
+        border-radius: 10px;
+        padding: 2px 10px;
+        transform: translateY(-50%);
+        z-index: 4;
+    }
+
+    a {
+        border-radius: 20px;
+        overflow: hidden;
+        display: inline-block;
+
+        img {
+            height: 100%;
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            transition: 1s linear;
+            &:hover {
+                transform: scale(130%);
+            }
+        }
+    }
+}
+// 43
